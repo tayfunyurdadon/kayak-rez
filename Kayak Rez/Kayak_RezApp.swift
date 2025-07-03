@@ -1,17 +1,17 @@
-//
-//  Kayak_RezApp.swift
-//  Kayak Rez
-//
-//  Created by Tayfun Yurdadön on 3.07.2025.
-//
-
 import SwiftUI
+import Firebase
 
 @main
 struct Kayak_RezApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView() // Giriş ekranımız
         }
     }
 }
+

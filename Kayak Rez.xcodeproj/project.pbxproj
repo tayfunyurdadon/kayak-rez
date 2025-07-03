@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		06FEE2112E16CE1A00CC284A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FEE2102E16CE1A00CC284A /* LoginView.swift */; };
+		06FEE2142E16D4DE00CC284A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 06FEE2132E16D4DE00CC284A /* FirebaseAuth */; };
+		06FEE2162E16D4DE00CC284A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 06FEE2152E16D4DE00CC284A /* FirebaseCore */; };
+		06FEE2182E16D4DE00CC284A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 06FEE2172E16D4DE00CC284A /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		06FEE1F22E16CB8500CC284A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,7 @@
 		06FEE1E32E16CB8300CC284A /* Kayak Rez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kayak Rez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FEE1F12E16CB8500CC284A /* Kayak RezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kayak RezTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FEE1FB2E16CB8500CC284A /* Kayak RezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kayak RezUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06FEE2102E16CE1A00CC284A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FEE2162E16D4DE00CC284A /* FirebaseCore in Frameworks */,
+				06FEE2142E16D4DE00CC284A /* FirebaseAuth in Frameworks */,
+				06FEE2182E16D4DE00CC284A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +86,7 @@
 		06FEE1DA2E16CB8300CC284A = {
 			isa = PBXGroup;
 			children = (
+				06FEE2102E16CE1A00CC284A /* LoginView.swift */,
 				06FEE1E52E16CB8300CC284A /* Kayak Rez */,
 				06FEE1F42E16CB8500CC284A /* Kayak RezTests */,
 				06FEE1FE2E16CB8500CC284A /* Kayak RezUITests */,
@@ -112,6 +124,9 @@
 			);
 			name = "Kayak Rez";
 			packageProductDependencies = (
+				06FEE2132E16D4DE00CC284A /* FirebaseAuth */,
+				06FEE2152E16D4DE00CC284A /* FirebaseCore */,
+				06FEE2172E16D4DE00CC284A /* FirebaseFirestore */,
 			);
 			productName = "Kayak Rez";
 			productReference = 06FEE1E32E16CB8300CC284A /* Kayak Rez.app */;
@@ -195,6 +210,9 @@
 			);
 			mainGroup = 06FEE1DA2E16CB8300CC284A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				06FEE2122E16D4DE00CC284A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 06FEE1E42E16CB8300CC284A /* Products */;
 			projectDirPath = "";
@@ -236,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FEE2112E16CE1A00CC284A /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +602,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06FEE2122E16D4DE00CC284A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06FEE2132E16D4DE00CC284A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06FEE2122E16D4DE00CC284A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		06FEE2152E16D4DE00CC284A /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06FEE2122E16D4DE00CC284A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		06FEE2172E16D4DE00CC284A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06FEE2122E16D4DE00CC284A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06FEE1DB2E16CB8300CC284A /* Project object */;
 }
